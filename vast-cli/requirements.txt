@@ -1,10 +1,10 @@
-torch>=1.13.1
+torch==2.5.1
 transformers==4.45.0
 peft>=0.10.0,<=0.13.2
 trl>=0.9.3
-bitsandbytes
+bitsandbytes==0.44.0
 pyyaml
-accelerate
+accelerate==1.1.1
 sentencepiece
 protobuf
 huggingface-hub>=0.24.7,<0.25
