@@ -20,3 +20,7 @@ pip install -r requirements.txt
 pip install jsonlines
 pip install openai
 pip install flash-attn --no-build-isolation
+
+
+# Reload Supervisor
+supervisorctl reload
