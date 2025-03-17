@@ -10,19 +10,13 @@ ENV_PATH="$WORKSPACE_DIR/worker-env"
 
 
 cd "$WORKSPACE_DIR"
-# Activate the main virtual environment
-. /venv/main/bin/activate
-
 git clone https://gvo-dot:${GITHUB_TOKEN}@github.com/the-gvo-people/task_${TASK_ID}.git
 
 
 wget https://raw.githubusercontent.com/the-gvo-people/vastai/refs/heads/main/vast-cli/requirements.txt
+wget https://raw.githubusercontent.com/the-gvo-people/vastai/refs/heads/main/vast-cli/install.sh
 
-# pip install -r requirements.txt
-pip install jsonlines
-# pip install openai
-# pip install flash-attn --no-build-isolation
-
+chmod +x install.sh
 
 # Reload Supervisor
 supervisorctl reload
