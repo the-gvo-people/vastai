@@ -23,4 +23,4 @@ python-dotenv
 gitpython
 pre-commit
 optuna
-scikit-lear
+scikit-learn
