@@ -14,7 +14,7 @@ cd "$WORKSPACE_DIR"
 . /venv/main/bin/activate
 
 
-wget https://github.com/the-gvo-people/vastai/blob/main/vast-cli/requirements.txt
+wget https://raw.githubusercontent.com/the-gvo-people/vastai/refs/heads/main/vast-cli/requirements.txt
 
 pip install -r requirements.txt
 pip install jsonlines
