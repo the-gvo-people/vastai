@@ -10,6 +10,7 @@ ENV_PATH="$WORKSPACE_DIR/worker-env"
 
 
 cd "$WORKSPACE_DIR"
+git config --global user.email "gvo1112@gmail.com"
 git clone https://gvo-dot:${GITHUB_TOKEN}@github.com/the-gvo-people/task_${TASK_ID}.git
 
 
